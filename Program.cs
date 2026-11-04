@@ -1,41 +1,28 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+var environment =
+    Environment.GetEnvironmentVariable("APP_ENVIRONMENT")
+    ?? "development";
 
-app.UseHttpsRedirection();
+var version =
+    Environment.GetEnvironmentVariable("APP_VERSION")
+    ?? "local";
 
-var summaries = new[]
+app.MapGet("/", () => new
 {
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+    application = "DevOps Web API",
+    version,
+    environment
+});
 
-app.MapGet("/weatherforecast", () =>
+app.MapGet("/health", () => new
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
-        (
-            DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
-            Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)]
-        ))
-        .ToArray();
-    return forecast;
-})
-.WithName("GetWeatherForecast");
+    status = "healthy",
+    version,
+    environment,
+    timestamp = DateTime.UtcNow
+});
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

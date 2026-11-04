@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj": {}
+    "C:\\Users\\kauann09112006\\Downloads\\DevOpsWebApi\\DevOpsWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj": {
+    "C:\\Users\\kauann09112006\\Downloads\\DevOpsWebApi\\DevOpsWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\kauann09112006\\Downloads\\DevOpsWebApi\\DevOpsWebApi.csproj",
         "projectName": "DevOpsWebApi",
-        "projectPath": "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj",
+        "projectPath": "C:\\Users\\kauann09112006\\Downloads\\DevOpsWebApi\\DevOpsWebApi.csproj",
         "packagesPath": "C:\\Users\\kauann09112006\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kauann09112006\\DevOpsWebApi\\obj\\",
+        "outputPath": "C:\\Users\\kauann09112006\\Downloads\\DevOpsWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -42,7 +42,7 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "true",
+          "enableAudit": "false",
           "auditLevel": "low",
           "auditMode": "all"
         },
@@ -52,12 +52,6 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[10.0.8, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

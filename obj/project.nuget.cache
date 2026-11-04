@@ -1,24 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k5d1hS7c1pQ=",
+  "dgSpecHash": "lC3fij78j9c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\kauann09112006\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.8\\microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
-    "C:\\Users\\kauann09112006\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "message": "O pacote 'Microsoft.OpenApi' 2.0.0 tem uma alta vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
-      "projectPath": "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj",
-      "warningLevel": 1,
-      "filePath": "C:\\Users\\kauann09112006\\DevOpsWebApi\\DevOpsWebApi.csproj",
-      "libraryId": "Microsoft.OpenApi",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "projectFilePath": "C:\\Users\\kauann09112006\\Downloads\\DevOpsWebApi\\DevOpsWebApi.csproj",
+  "expectedPackageFiles": [],
+  "logs": []
 }
